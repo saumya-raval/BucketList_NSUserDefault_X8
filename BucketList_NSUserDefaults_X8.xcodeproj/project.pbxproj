@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B82D333A1E5E90DB0067A9AB /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = B82D33391E5E90DB0067A9AB /* Post.swift */; };
+		B82D333C1E61319B0067A9AB /* PostCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B82D333B1E61319B0067A9AB /* PostCell.swift */; };
+		B82D333E1E613C880067A9AB /* PostVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B82D333D1E613C880067A9AB /* PostVC.swift */; };
+		B82D335F1E64E6310067A9AB /* DataServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = B82D335E1E64E6310067A9AB /* DataServices.swift */; };
 		B8871BB91E5E87FD0014F011 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8871BB81E5E87FD0014F011 /* AppDelegate.swift */; };
 		B8871BBB1E5E87FD0014F011 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8871BBA1E5E87FD0014F011 /* ViewController.swift */; };
 		B8871BBE1E5E87FD0014F011 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B8871BBC1E5E87FD0014F011 /* Main.storyboard */; };
@@ -15,6 +19,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		B82D33391E5E90DB0067A9AB /* Post.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
+		B82D333B1E61319B0067A9AB /* PostCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostCell.swift; sourceTree = "<group>"; };
+		B82D333D1E613C880067A9AB /* PostVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostVC.swift; sourceTree = "<group>"; };
+		B82D335E1E64E6310067A9AB /* DataServices.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataServices.swift; sourceTree = "<group>"; };
 		B8871BB51E5E87FC0014F011 /* BucketList_NSUserDefaults_X8.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BucketList_NSUserDefaults_X8.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B8871BB81E5E87FD0014F011 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B8871BBA1E5E87FD0014F011 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -35,6 +43,39 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		B82D33361E5E908F0067A9AB /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				B8871BBA1E5E87FD0014F011 /* ViewController.swift */,
+				B82D333D1E613C880067A9AB /* PostVC.swift */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		B82D33371E5E90960067A9AB /* View */ = {
+			isa = PBXGroup;
+			children = (
+				B82D333B1E61319B0067A9AB /* PostCell.swift */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		B82D33381E5E90AD0067A9AB /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				B82D33391E5E90DB0067A9AB /* Post.swift */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		B82D335D1E64E60C0067A9AB /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				B82D335E1E64E6310067A9AB /* DataServices.swift */,
+			);
+			name = Services;
+			sourceTree = "<group>";
+		};
 		B8871BAC1E5E87FC0014F011 = {
 			isa = PBXGroup;
 			children = (
@@ -54,9 +95,12 @@
 		B8871BB71E5E87FD0014F011 /* BucketList_NSUserDefaults_X8 */ = {
 			isa = PBXGroup;
 			children = (
-				B8871BB81E5E87FD0014F011 /* AppDelegate.swift */,
-				B8871BBA1E5E87FD0014F011 /* ViewController.swift */,
+				B82D33381E5E90AD0067A9AB /* Model */,
+				B82D33371E5E90960067A9AB /* View */,
+				B82D33361E5E908F0067A9AB /* Controller */,
+				B82D335D1E64E60C0067A9AB /* Services */,
 				B8871BBC1E5E87FD0014F011 /* Main.storyboard */,
+				B8871BB81E5E87FD0014F011 /* AppDelegate.swift */,
 				B8871BBF1E5E87FD0014F011 /* Assets.xcassets */,
 				B8871BC11E5E87FD0014F011 /* LaunchScreen.storyboard */,
 				B8871BC41E5E87FD0014F011 /* Info.plist */,
@@ -137,8 +181,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B82D333A1E5E90DB0067A9AB /* Post.swift in Sources */,
 				B8871BBB1E5E87FD0014F011 /* ViewController.swift in Sources */,
 				B8871BB91E5E87FD0014F011 /* AppDelegate.swift in Sources */,
+				B82D335F1E64E6310067A9AB /* DataServices.swift in Sources */,
+				B82D333C1E61319B0067A9AB /* PostCell.swift in Sources */,
+				B82D333E1E613C880067A9AB /* PostVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -263,6 +311,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 3986475H8S;
 				INFOPLIST_FILE = BucketList_NSUserDefaults_X8/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "PlayAgain.BucketList-NSUserDefaults-X8";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -276,6 +325,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 3986475H8S;
 				INFOPLIST_FILE = BucketList_NSUserDefaults_X8/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "PlayAgain.BucketList-NSUserDefaults-X8";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -302,6 +352,7 @@
 				B8871BC91E5E87FD0014F011 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
